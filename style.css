@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap&#39;);
+
+:root {
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.titulo-principal span {
+    color: var(--verde);
+}
+
+
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+}
+
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+.botoes {
+    display: block;
+}
+
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
+
+JHONATAS EMILIO TORRES • 14:26
+index.html
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus objetivos do ano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
+        <div class="conteudo">
+        <div class="botoes">
+            <button class="botao ativo">Cursos na Alura</button>
+            <button class="botao">Criar projetos em Javascript</button>
+            <button class="botao">Criar um portfolio</button>
+            <button class="botao">Atualizar meu currículo</button>
+        </div>
+        <div class="abas-textos">
+            <div class="aba-conteudo ativo">
+                <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
+
+JHONATAS EMILIO TORRES • 14:27
+main.js
+
+
+
+const botoes = document.querySelectorAll(".botao");
+
+for(let i=0;i <botoes.length;i++){
+    botoes[i].onclick = function(){
+
+        for(let j=0;j<botoes.length;j++){
+            botoes[j].classList.remove("ativo");
+        }
+
+        botoes[i].classList.add("ativo");
+    }
+}
+
+Adicionar comentário para a turma...
+
+
+Postada por JHONATAS EMILIO TORRES
+JHONATAS EMILIO TORRES
+Criado em: 9 de mar.9 de mar.
+prompt para imagem na figurinha:
+
+"criar um adesivo colecionável profissional no estilo Panini para a Copa do Mundo FIFA 2026. O adesivo apresenta um brasileiro de meia-idade com um sorriso amigável " imagem em anexo", vestindo a camisa amarela oficial da seleção brasileira com o escudo da CBF. O fundo é uma atmosfera vibrante e reluzente de estádio com as bandeiras dos EUA e do México. O adesivo possui uma borda decorativa com os logotipos 'USA MEX CAN 26' na parte superior e 'BRASIL' em letras verdes em negrito na parte inferior. O ano '2026' é exibido em números festivos em 3D. Alta resolução, estética de produto oficial, cores vivas e design gráfico nítido."
+
+JHONATAS EMILIO TORRES • 16 de mar.
+Usar a foto enviada de um jovem brasileiro como referência e manter a fisionomia do rosto exatamente igual (não alterar traços faciais). O jovem tem cabelo curto e cacheado e um sorriso amigável.
+
+Ele está vestindo a camisa amarela oficial da seleção brasileira com o escudo da CBF no peito.
+
+O adesivo tem estilo oficial de álbum da Copa do Mundo, com iluminação vibrante e design esportivo profissional.
+
+Fundo: estádio de futebol iluminado e reluzente, atmosfera vibrante de Copa do Mundo, com bandeiras dos Estados Unidos e do México aparecendo no fundo.
+
+Borda: moldura decorativa estilo adesivo Panini.
+
+Topo do cartão:
+"USA MEX CAN 26"
+
+Parte inferior:
+"BRASIL" em letras verdes grandes e fortes.
+
+Adicionar o número "2026" em estilo 3D festivo e brilhante.
+
+Na parte final inferior do cartão colocar o nome:
+"eduardo"
+Criar um adesivo colecionável profissional no estilo Panini para a Copa do Mundo FIFA 2026.
+
+Usar a foto enviada de um jovem brasileiro como referência e manter a fisionomia do rosto exatamente igual (não alterar traços faciais). O jovem tem cabelo curto e cacheado e um sorriso amigável.
+
+Ele está vestindo a camisa amarela oficial da seleção brasileira com o escudo da CBF no peito.
+
+O adesivo tem estilo oficial de álbum da Copa do Mundo, com iluminação vibrante e design esportivo profissional.
+
+Fundo: estádio de futebol iluminado e reluzente, atmosfera vibrante de Copa do Mundo, com bandeiras dos Estados Unidos e do México aparecendo no fundo.
+
+Borda: moldura decorativa estilo adesivo Panini.
+
+Topo do cartão:
+"USA MEX CAN 26"
+
+Parte inferior:
+"BRASIL" em letras verdes grandes e fortes.
+
+Adicionar o número "2026" em estilo 3D festivo e brilhante.
+
+Na parte final inferior do cartão colocar o nome:
+"eduardo"
+
+Estilo visual:
+- cores vivas
+- qualidade de impressão profissional
+- design gráfico nítido
+- aparência de produto oficial da Copa do Mundo
+- alta resoluçãoEstilo visual:
+- cores vivas
+- qualidade de impressão profissional
+- design gráfico nítido
+- aparência de produto oficial da Copa do Mundo
+- alta resolução
